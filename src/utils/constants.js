@@ -1,5 +1,6 @@
 const HOST = import.meta.env.VITE_SERVER_URL;
-const AUTH_ROUTES = "/api/auth";
+const APP_BASE_URL ="http://3.108.234.179:4000/"
+const AUTH_ROUTES = `${APP_BASE_URL}/api/auth`;
 const SIGNUP_ROUTE = `${AUTH_ROUTES}/signup`;
 const LOGIN_ROUTE = `${AUTH_ROUTES}/login`;
 const GET_USER_INFO = `${AUTH_ROUTES}/user-info`;
@@ -8,16 +9,16 @@ const ADD_PROFILE_IMAGE_ROUTE = `${AUTH_ROUTES}/add-profile-image`;
 const REMOVE_PROFILE_IMAGE_ROUTE = `${AUTH_ROUTES}/remove-profile-image`;
 const LOGOUT_ROUTE = `${AUTH_ROUTES}/logout`;
 
-const CONTACTS_ROUTES = '/api/contacts';
+const CONTACTS_ROUTES = `${APP_BASE_URL}/api/contacts`;
 const SEARCH_CONTACTS_ROUTES = `${CONTACTS_ROUTES}/search`;
 const GET_DM_CONTACTS_ROUTES = `${CONTACTS_ROUTES}/get-contacts-for-dm`;
 const GET_ALL_CONTACTS_ROUTES = `${CONTACTS_ROUTES}/get-all-contacts`;
 
-const MESSAGES_ROUTES = '/api/messages';
+const MESSAGES_ROUTES = `${APP_BASE_URL}/api/messages`;
 const GET_ALL_MESSAGES_ROUTE = `${MESSAGES_ROUTES}/get-messages`;
 const UPLOAD_FILE_ROUTE = `${MESSAGES_ROUTES}/upload-file`;
 
-const CHANNEL_ROUTES = '/api/channel';
+const CHANNEL_ROUTES = `${APP_BASE_URL}/api/channel`;
 const CREATE_CHANNEL_ROUTE = `${CHANNEL_ROUTES}/create-channel`;
 const GET_USER_CHANNELS_ROUTE = `${CHANNEL_ROUTES}/get-user-channels`;
 const GET_CHANNEL_MESSAGES = `${CHANNEL_ROUTES}/get-channel-messages`;
